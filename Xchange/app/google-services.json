@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "981967254837",
+    "firebase_url": "https://xchange-543c1.firebaseio.com",
+    "project_id": "xchange-543c1",
+    "storage_bucket": "xchange-543c1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981967254837:android:08b36d5dd415d8e1",
+        "android_client_info": {
+          "package_name": "com.erikiado.xchange"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981967254837-ds215h8quil3rh25ml1h1659qvn4p13n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCg4F-Hk7VIYdygEuhp56dGPPjek-0AGHE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
