@@ -10,6 +10,90 @@
     android:layout_height="wrap_content"
         android:textSize="20sp"
     android:id="@+id/text"/>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="@dimen/activity_vertical_margin">
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:rowCount="5"
+            android:columnCount="2"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <TextView
+                android:text="Product Name\n"
+                android:layout_columnSpan="2"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                />
+
+            <ScrollView
+                android:layout_columnSpan="2"
+                android:layout_width="match_parent"
+                android:layout_height="369dp"
+                android:weightSum="2">
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:rowCount="2"
+                    android:columnCount="1">
+
+                    <ImageView
+                        android:id="@+id/previewImage"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:src="@drawable/pika"
+                        android:layout_gravity="center_horizontal"
+                        />
+
+                    <TextView
+                        android:id="@+id/Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="150dp"
+                        android:text="Description"
+                        android:textSize="20dp"
+                        android:layout_gravity="center_horizontal"
+                        android:textAlignment="center"
+                        android:background="@drawable/back"
+                        />
+
+                </GridLayout>
+
+            </ScrollView>
+
+            <Button
+                android:id="@+id/button_reject"
+                android:layout_columnWeight="1"
+                android:text="Reject"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:textAlignment="center"
+                android:background="#ff0000"
+                android:onClick="rejectButtonAction"/>
+
+            <Button
+                android:id="@+id/button_accept"
+                android:layout_columnWeight="1"
+                android:text="Accept"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:background="#00ff00"
+                android:textAlignment="center"
+                android:onClick="acceptButtonAction"/>
+
+        </GridLayout>
+    </RelativeLayout>
 
 
 </FrameLayout>

@@ -16,6 +16,7 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.erikiado.xchange.Activities.ActivityProductDetail;
 import com.erikiado.xchange.Activities.ActivityUpload;
 import com.facebook.accountkit.Account;
 import com.facebook.accountkit.AccountKit;
@@ -45,7 +46,7 @@ public class FragmentSeller extends Fragment {
     private FirebaseUser mFirebaseUser;
     private DatabaseReference mFirebaseDatabaseReference;
 
-    private Button addProduct;
+    private Button addProduct,detailProduct;
     private ImageView productImage;
     @Nullable
     @Override
@@ -60,6 +61,7 @@ public class FragmentSeller extends Fragment {
 
 
         addProduct = ((Button) baseView.findViewById(R.id.seller_add_product));
+        detailProduct = ((Button) baseView.findViewById(R.id.seller_product_detail));
         productImage = ((ImageView) baseView.findViewById(R.id.product_image));
 
 //        Picasso.with(context)
@@ -76,6 +78,13 @@ public class FragmentSeller extends Fragment {
             }
         });
 
+        detailProduct.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new  Intent(context,ActivityProductDetail.class);
+                startActivity(intent);
+            }
+        });
 
         if (isOnline()) {
             AccountKit.getCurrentAccount(new AccountKitCallback<Account>() {

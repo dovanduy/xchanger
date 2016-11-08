@@ -72,8 +72,6 @@ public class FragmentExplore extends Fragment {
 
 
         return baseView;
-
-
     }
 
     @Override

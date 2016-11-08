@@ -36,6 +36,7 @@
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".Activities.ActivityLogin" />
+        <activity android:name=".Activities.ActivityProductDetail" />
         <activity
             android:name="com.facebook.accountkit.ui.AccountKitActivity"
             android:theme="@style/AppLoginTheme"

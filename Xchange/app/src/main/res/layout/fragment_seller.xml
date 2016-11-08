@@ -20,4 +20,10 @@
         android:layout_height="wrap_content"
         android:text="Agregar"
         android:id="@+id/seller_add_product"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Ver Producto"
+        android:layout_marginTop="100dp"
+        android:id="@+id/seller_product_detail"/>
 </FrameLayout>
